@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#ülesanne2, skript
+#
+echo -n "Cristopher-Robin Alt, "
+echo "ISP16"
+echo "Väga äge"
+echo "Saan tööd tehtud ja on jäänud väga hea mulje"
+#
+# skripti lõpp
+
