@@ -12,7 +12,12 @@ then
    echo "$arv on positiivne"
 # kui väärtus on negatiivne
 # siis arv peab olema väiksem kui 0 
-else
+elif [ $arv -lt 0 ]
    echo "$arv on negatiivne"
+# kui esimene tingimus
+# voi teine tingimus ei sobinud
+# siis kasuta else osa
+else
+   echo " $arv on neutraalne"
 # if lause tuleb korralikult lõpetada
 fi
