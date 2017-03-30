@@ -1,7 +1,8 @@
 #!/bin/bash
 for (( i = l; i <= 5; i++ ))	### outer for loop ###
 do
-	for (( j = l ; j <= 5; j++ )) ### Inner for loop ###
+	echi -n "$i. "
+	for (( j = 1 ; j <= 3; j++ )) ### Inner for loop ###
 	do
 		echo -n "* "
 	done
