@@ -1,0 +1,9 @@
+#!/bin/bash
+for (( i = l; i <= 5; i++ ))	### outer for loop ###
+do
+	for (( j = l ; j <= 5; j++ )) ### Inner for loop ###
+	do
+		echo -n "* "
+	done
+       echo " " #### print the new line ###
+done
