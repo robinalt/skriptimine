@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# kolmurk paremalt vasakule
+#
+for ((r=1; r<6; r++))
+do
+#trükime reanumbri ilma reavahetuseta
+echo -n "$r "
+for ((v=1; v<$((6-$r+1)); v++))
+do
+#tarnid
+echo -n "* "
+done
+#kui rida tuleb lõpetada
+echo
+done
