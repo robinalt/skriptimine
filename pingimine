@@ -1,0 +1,12 @@
+#!/bin/bash
+#pingimine IP_range 172.23.13.20-172.23.13.50
+
+for ip in 172.23.13.{20..50}
+do
+	ping -c 1 $ip > /dev/null
+	if [ $? -eq 0 ]; then
+		echo "$ip - OK"
+	else
+		echo "$ip - not OK"
+	fi
+done
