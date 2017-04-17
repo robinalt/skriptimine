@@ -13,7 +13,7 @@ else
 fi
 echo
 echo -n "$tervitus "
-echo -n "whoami "
+echo -n `whoami ` 
 #echo -n `whoami | cut -f1 -d"." | cut -c2-'
 echo "!"
 #
