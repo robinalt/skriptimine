@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+kell=`date | cut -c12-13`
+#
+if [ $kell -gt 6 -a $kell -lt 12 ]; then
+	tervitus="tere hommikust, "
+elif [ $kell -ge 12 -a $kell -lt 16 ]; then
+	tervitus="Tere päevast, "
+elif [ $kell -ge 16 -a $kell -lt 20 ]; then
+	tervitus="Tere õhtust, "
+else
+	tervitus="Head ööd, "
+fi
+echo
+echo -n "$tervitus "
+echo -n "whoami "
+#echo -n `whoami | cut -f1 -d"." | cut -c2-'
+echo "!"
+#
