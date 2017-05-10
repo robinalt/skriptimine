@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+#Cristopher-Robin Alt ISP16
+#Skripti nimi on menu
+#Skript annab kasutajale menüü,sisestatud numbrile vastava söögi kirjelduse
+#
+#toon valja menuu valikud
+echo "menüü:
+1) steak and potatoes
+2) fish and chips
+3) soup and salad"
+#Moodustame valikud ja nende numbrid
+echo -n "Please make a selection (1 or 2 or 3)"
+read valiku_nr
+if [ $valiku_nr -eq 1 ];then
+	echo "Stick to your ribs.
+Watch your cholesterol
+Enjoy your meal!"
+	else
+		if [ $valiku_nr -eq 2 ];then
+	echo "British are coming!
+Enjoy your meal!"
+	else
+		if [ $valiku_nr -eq 3 ];then
+	echo "Health foods...
+Dieting is so boring.
+Enjoy your meal!"
+		fi
+		fi
+		fi	
