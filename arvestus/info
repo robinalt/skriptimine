@@ -1,0 +1,21 @@
+#!/bin/bash
+#Cristopher-Robin Alt ISP16
+#Skripti nimi on info
+#Skript tervitab sisselogitud kasutajat ja näitab kuupäeva ning kellaaega
+#
+#arvuti otsib üles, kes on kasutaja ning tervitab kasutajat
+kasutaja=`whoami`
+echo "Tervist, $kasutaja"
+#Skript väljastab kuupäeva
+kuupaev=`date +'%d. %B'`
+#Kella aja määramine
+kell=`date +'%H:%M'`
+#Väljastatakse kõik (kellaaeg ja kuupäev) ühele reale
+echo "Täna on $kuupaev kell $kell"
+#Lisame vahe
+echo "--------------------------------------"
+#Kalendri väärtuse väljastamine
+kalender= cal
+#Kalendri lisamine 
+echo "$kalender"
+
