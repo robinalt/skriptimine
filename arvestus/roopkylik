@@ -1,0 +1,27 @@
+#!/bin/bash
+#Cristopher-Robin Alt ISP16
+#Skripti eesmärk on teha roopkylik
+#Skript väljastab roopkyliku
+#
+echo -n "Sisesta ridade arv: "
+read rida
+#ridade arv
+for ((r=1; r<$rida+1; r++))
+do
+echo -n "$r "
+#tuhikud
+for (( v=1; v<$(($rida+1-$r+1)); v++))
+	do
+		echo -n " "
+done
+#tärnide lisamine
+for (( i = $rida; i <= $rida; i++))
+do
+	for (( j = 1 ; j <= i ; j++))
+	do
+		echo -n "*"
+	done
+done
+#reavahetuse lisamine peale lõppu
+echo " "
+done
